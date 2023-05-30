@@ -18,6 +18,7 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
+    "start":"node src/index.js",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
     "build": "tsc"
   },
