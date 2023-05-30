@@ -7,6 +7,7 @@
     "@prisma/client": "^4.15.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "mongodb": "^5.5.0",
     "mongoose": "^7.2.2",
     "prisma": "^4.15.0"
   },
@@ -19,5 +20,8 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc"
+  },
+  "engines": {
+    "node": ">=14 <15"
   }
 }
