@@ -5,7 +5,14 @@
      
       "src": "src/index.ts",
     
-      "use": "tsc src/*.ts"
+      "use": "@vercel/node"
     }
-  ]
+  ],
+"routes":[
+ {
+  "src":"(.*)",
+  "dest":"src/server.ts"
+ }
+
+]
 }
