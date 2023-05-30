@@ -18,8 +18,7 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
-    "build": "tsc"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts"
   },
   "engines": {
     "node": ">=14 <15"
