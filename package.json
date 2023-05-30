@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
-    "build": "tsc src/*.ts"
+    "build": "tsc"
   },
   "engines": {
     "node": ">=14 <15"
