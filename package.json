@@ -7,7 +7,7 @@
     "@prisma/client": "^4.15.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongodb": "3.7",
+    "mongoose": "^7.2.2",
     "prisma": "^4.15.0"
   },
   "devDependencies": {
@@ -17,7 +17,7 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "dev": "ts-node-dev",
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc"
   }
 }
