@@ -4,7 +4,7 @@ import {  Request, Response } from 'express';
 import cors from 'cors';
 import { router } from './routes';
 const app = express();
-
+const port = process.env.PORT ||3333
 app.use(cors());
 
 //const route = Router()
@@ -29,4 +29,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 
 
-app.listen(3333, () => 'server running on port 3333')
+app.listen(port, () => 'server running on port 3333')
