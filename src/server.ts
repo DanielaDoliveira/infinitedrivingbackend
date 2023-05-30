@@ -1,8 +1,6 @@
 
 import express, { NextFunction } from 'express'
-import { PrismaClient } from '@prisma/client';
-import { Router, Request, Response } from 'express';
-import mongoose from 'mongoose';
+import {  Request, Response } from 'express';
 import cors from 'cors';
 import { router } from './routes';
 const app = express();
