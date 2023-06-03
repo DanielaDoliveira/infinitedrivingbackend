@@ -1,14 +1,19 @@
 
 import express, { NextFunction } from 'express'
+import bodyParser from 'body-parser';
 import {  Request, Response } from 'express';
 import cors from 'cors';
 import { router } from './routes';
+
 const app = express();
 const port = process.env.PORT ||3333
 app.use(cors());
 
 //const route = Router()
 app.use(express.json());
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+
 app.use(router);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
